@@ -111,16 +111,15 @@ video {
 
 }
 
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+  display: block;
   content: '';
-  position: absolute;
   margin-top: 1px;
   margin-left: 1px;
   width: 15px;
   height: 15px;
   border: 1px solid #FFF;
   background-color: #FFF;
-  z-index: 1;
 }
 
 .title {
