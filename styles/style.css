@@ -71,7 +71,6 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: -4px;
 }
 
 .search-form__fieldset-title {
@@ -91,6 +90,7 @@ video {
 
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__checkbox-list {
@@ -148,15 +148,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__details .title {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .content__list {
   position: relative;
-  height: 298px;
+  height: 303px;
   overflow: auto;
-  scrollbar-width: none;
-  margin-left: -1px;
 }
 
 .content__list-item {
@@ -165,6 +163,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__list-item:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .content__list-item:active {
@@ -179,7 +178,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   display: block;
   text-decoration: none;
   color: white;
-  height: 107px;
 }
 
 .content__card-link_current {
@@ -189,7 +187,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 .content__video-card {
   display: grid;
   grid-template-columns: auto 197px;
-  align-items: flex-start;
 }
 
 .content__video-card-title {
@@ -210,9 +207,9 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-thumbnail {
-  height: 103px;
+  height: 105px;
   width: 100%;
-  margin-top: 2px;
+  margin: 1px 0;
 }
 
 .content__video-card-description-container {
@@ -241,12 +238,16 @@ button:hover {
   text-decoration: underline;
 }
 
+button:focus {
+  outline: none;
+}
+
 button:active {
   background-color: #545050;
 }
 
-button:focus {
-  outline: 1px solid #fff;
+button:focus-visible {
+  outline: 1px solid white;
   outline-offset: 1px;
 }
 
